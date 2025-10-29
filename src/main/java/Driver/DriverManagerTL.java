@@ -19,7 +19,7 @@ public class DriverManagerTL {
         return  dr.get();
     }
 
-    //Unload
+
     public static void init()
     {
         if(Objects.isNull(DriverManagerTL.getDriver()))

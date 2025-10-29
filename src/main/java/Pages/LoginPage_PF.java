@@ -1,19 +1,21 @@
 package Pages;
 
-import Base.CommonToAllPage;
+import Base.CommonToAllPages;
 import Pages.PageObjectModel.DashboardPage_POM;
 import Utils.PropertyReader;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage_PF extends CommonToAllPage {
+public class LoginPage_PF extends CommonToAllPages {
     WebDriver driver;
 
     public LoginPage_PF(WebDriver driver) {
         super();
-        PageFactory.initElements(driver, this);
+        this.driver=driver;
+        PageFactory.initElements(driver,this);
     }
 
     //Page Locators
@@ -25,7 +27,7 @@ public class LoginPage_PF extends CommonToAllPage {
     private WebElement password;
 
     @FindBy(id = "js-login-btn")
-    private WebElement signinbutton;
+    private By signinbutton;
 
     @FindBy(css = "#js-notification-box-msg")
     private WebElement error_message;

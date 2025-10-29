@@ -18,12 +18,12 @@ public static void init()
 {
     if(driver==null)
     {
-        EdgeOptions options= new EdgeOptions();
-        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        options.addArguments("--StartMaximized--");
-        options.addArguments("--guest--");
-        //options.addArguments("--headless--");
-        driver= new EdgeDriver(options);
+        EdgeOptions edgeoptions= new EdgeOptions();
+        edgeoptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        edgeoptions.addArguments("--StartMaximized--");
+        edgeoptions.addArguments("--guest--");
+        //edgeoptions.addArguments("--headless--");
+        driver= new EdgeDriver(edgeoptions);
     }
 }
 

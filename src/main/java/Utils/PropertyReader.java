@@ -5,10 +5,6 @@ import java.util.Properties;
 
 public class PropertyReader {
 
-    public PropertyReader()
-    {
-
-    }
 
     public static String readyKey(String key) {
         FileInputStream fileInputStream = null;

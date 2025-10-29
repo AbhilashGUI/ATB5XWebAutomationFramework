@@ -1,17 +1,18 @@
 package Pages.PageObjectModel;
 
-import Base.CommonToAllPage;
+import Base.CommonToAllPages;
 import Utils.PropertyReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class LoginPage_POM extends CommonToAllPage {
+public class LoginPage_POM extends CommonToAllPages {
 
     WebDriver driver;
 
     public LoginPage_POM() {
         super();
+        this.driver=driver;
     }
 
 
@@ -27,7 +28,8 @@ public class LoginPage_POM extends CommonToAllPage {
         enterInput(username, PropertyReader.readyKey("username"));
         enterInput(password, "admin");
         clickElement(signinbutton);
-        presenceOfElement(error_message);visibilityOfElement(error_message);
+        presenceOfElement(error_message);
+        visibilityOfElement(error_message);
         return getElement(error_message).getText();
 
     }

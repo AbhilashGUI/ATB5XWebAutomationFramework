@@ -1,21 +1,21 @@
 package Pages.PageObjectModel;
 
-import Base.CommonToAllPage;
+import Base.CommonToAllPages;
 import org.openqa.selenium.By;
 
-public class DashboardPage_POM extends CommonToAllPage {
+public class DashboardPage_POM extends CommonToAllPages {
 
     public DashboardPage_POM() {
     }
 
         // Page Locators
-        By userNameOnDashboard = By.cssSelector("[data-qa=\"lufexuloga\"]");
+        By UserNameOnDashboard = By.cssSelector("[data-qa=\"lufexuloga\"]");
 
 
         // Page Actions
         public String loggedInUserName () {
-            presenceOfElement(userNameOnDashboard);
-            return getElement(userNameOnDashboard).getText();
+            presenceOfElement(UserNameOnDashboard);
+            return getElement(UserNameOnDashboard).getText();
         }
 
 
