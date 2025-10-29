@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import static java.sql.DriverManager.getDriver;
+
+import static Driver.DriverManagerTL.getDriver;
+
 
 public class CommonToAllPages {
 
@@ -22,12 +24,12 @@ public class CommonToAllPages {
 
     //This is common to all the pages, it contains some selenium helper methods
     public void clickElement(By by) {
-        getDriver().findelement().click();
+        getDriver().findElement(by).click();
     }
 
     //Overloaded methods
     public void enterInput(By by, String key) {
-        getDriver().findelement(by).sendkeys(key);
+        getDriver().findElement(by).sendKeys(key);
     }
 
     public void enterInput(WebElement element, String key) {
@@ -45,6 +47,6 @@ public class CommonToAllPages {
     }
 
     public WebElement getElement(By key) {
-        return getDriver().findelement(key);
+        return getDriver().findElement(key);
     }
 }

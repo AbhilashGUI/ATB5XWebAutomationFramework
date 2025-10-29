@@ -12,7 +12,7 @@ public class LoginPage_POM extends CommonToAllPages {
 
     public LoginPage_POM() {
         super();
-        this.driver=driver;
+
     }
 
 

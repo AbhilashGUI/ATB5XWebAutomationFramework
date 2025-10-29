@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bab78e2-8c2c-4ff9-ab51-3320416299a1" name="Changes" comment="New code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Resources/Data.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest/CommonToAllTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverManagerTL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverManagerTL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/LoginPage_PF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/LoginPage_PF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/DashboardPage_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/DashboardPage_POM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/LoginPage_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/LoginPage_POM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Resources/Data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Resources/Data.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/PropertyReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,51 +43,129 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.shouldAnswerWithTrue.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.App.executor": "Run",
+    "JUnit.AppTest.shouldAnswerWithTrue.executor": "Run",
+    "JUnit.AutomationCalenderTest.TestAutomationscenario.executor": "Run",
+    "JUnit.TestVWOLogin.Testloginnegative.executor": "Run",
+    "JUnit.TestVWOLoginPOM.TestloginNegative.executor": "Run",
+    "JUnit.TestVWOLoginPOM.executor": "Run",
+    "JUnit.TestVWOLoginPOMBaseTest.TestLoginNegative.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.TestVWOLogin.Testloginnegative.executor": "Run",
+    "TestNG.TestVWOLoginPOM.TestloginNegative.executor": "Run",
+    "TestNG.TestVWOLoginPOMBaseTest.TestLoginNegative.executor": "Run",
+    "TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Abhilash Sharma\IdeaProjects\ATB5XWebAutomationFramework\src\test\java\TestXMLs" />
+      <recent name="C:\Users\Abhilash Sharma\IdeaProjects\ATB5XWebAutomationFramework\src\test\java\TestXMLPOM" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive">
+    <configuration name="TestVWOLoginPOMBaseTest.TestLoginNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ATB5XWebAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOMBaseTest" />
+      <option name="METHOD_NAME" value="TestLoginNegative" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestVWOLoginPOMBaseTest2.Testloginpositive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB5XWebAutomationFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOMBaseTest2" />
+      <option name="METHOD_NAME" value="Testloginpositive" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVWOLoginPOMBaseTest.TestLoginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB5XWebAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOMBaseTest" />
+      <option name="METHOD_NAME" value="TestLoginNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVWOLoginPOM.TestloginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB5XWebAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOM" />
+      <option name="METHOD_NAME" value="TestloginNegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVWOLogin.Testloginnegative" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB5XWebAutomationFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLogin" />
+      <option name="METHOD_NAME" value="Testloginnegative" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.AppTest.shouldAnswerWithTrue" />
+        <item itemvalue="TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive" />
+        <item itemvalue="TestNG.TestVWOLogin.Testloginnegative" />
+        <item itemvalue="TestNG.TestVWOLoginPOMBaseTest.TestLoginNegative" />
+        <item itemvalue="TestNG.TestVWOLoginPOM.TestloginNegative" />
+        <item itemvalue="JUnit.TestVWOLoginPOMBaseTest.TestLoginNegative" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761625305962</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New code">
+      <option name="closed" value="true" />
+      <created>1761738119803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761738119803</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

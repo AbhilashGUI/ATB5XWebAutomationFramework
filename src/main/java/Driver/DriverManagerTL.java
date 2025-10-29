@@ -19,12 +19,16 @@ public class DriverManagerTL {
         return  dr.get();
     }
 
-
+    // Unload
+    public static void unload(){
+        dr.remove();
+    }
     public static void init()
     {
         if(Objects.isNull(DriverManagerTL.getDriver()))
         {
             WebDriver driver= new EdgeDriver();
+            driver.manage().window().maximize();
             setDriver(driver);
         }
     }
@@ -34,6 +38,7 @@ public class DriverManagerTL {
         if(Objects.nonNull(DriverManagerTL.getDriver()))
         {
             getDriver().quit();
+            unload();
 
         }
     }
