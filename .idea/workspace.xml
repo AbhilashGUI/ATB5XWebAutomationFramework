@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLogin.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/GenericUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" afterDir="false" />
@@ -194,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761738119803</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New code">
+      <option name="closed" value="true" />
+      <created>1761764760625</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761764760625</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
