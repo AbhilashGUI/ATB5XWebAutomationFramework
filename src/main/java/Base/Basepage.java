@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+
 
 public class Basepage {
 
@@ -16,10 +16,6 @@ public class Basepage {
 
     }
 
-    protected void implicitwait()
-    {
-        DriverManagerTL2.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
 
     protected void enterInput(By by, String key)
     {
@@ -49,8 +45,8 @@ public class Basepage {
         return new WebDriverWait(DriverManagerTL2.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
     }
 
-    protected WebElement elementToBeClickable(final By elementIdentier) {
-        WebElement element = new WebDriverWait(DriverManagerTL2.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(elementIdentier));
+    protected WebElement elementToBeClickable(final By elementIdentifier) {
+        WebElement element = new WebDriverWait(DriverManagerTL2.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(elementIdentifier));
         return element;
     }
 
