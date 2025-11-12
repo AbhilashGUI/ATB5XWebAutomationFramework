@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 
 public class TestVWOLoginPOMBaseTest extends CommonToAllTest {
 
-@Test
-public void TestLoginNegative()
+@Test(groups = {"smoke"})
+public void TestLoginNegative() //1st Framework
 {
     LoginPage_POM loginPagePom= new LoginPage_POM();
     loginPagePom.openVWOLoginUrl();

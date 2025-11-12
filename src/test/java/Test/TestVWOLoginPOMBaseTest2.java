@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 public class TestVWOLoginPOMBaseTest2 extends CommonToAllTest {
 
 
-    @Test
-    public void Testloginpositive()
+    @Test(groups= {"P2"})
+    public void Testloginpositive()  //1st Framework
     {
 
        LoginPage_POM loginPagePom = new LoginPage_POM();

@@ -10,7 +10,7 @@ public class LoginPage_POM extends CommonToAllPages {
 
     WebDriver driver;
 
-    public LoginPage_POM() {
+    public LoginPage_POM() {  //1st Framework
         super();
 
     }

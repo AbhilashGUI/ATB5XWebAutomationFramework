@@ -13,7 +13,7 @@ public class TestVWOLogin {
 
 
     @Test
-    public void Testloginnegative()
+    public void Testloginnegative()  //Unstructured
     {
         WebDriver driver= new EdgeDriver();
         driver.manage().window().maximize();

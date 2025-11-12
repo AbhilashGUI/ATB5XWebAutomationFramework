@@ -1,20 +1,23 @@
 package BaseTest;
 
 
+
 import Driver.DriverManagerTL;
+import Driver.DriverManagerTL2;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class CommonToAllTest {
+import java.net.MalformedURLException;
 
+public class CommonToAllTest {   //1st Framework
 
+  //Starts the webdriver
     @BeforeMethod(alwaysRun = true)
-    public void setup()
-    {
+    public void setup() throws MalformedURLException {
         DriverManagerTL.init();
     }
 
-
+    //Closes the webdriver
     @AfterMethod(alwaysRun = true)
     public void teardown()
     {

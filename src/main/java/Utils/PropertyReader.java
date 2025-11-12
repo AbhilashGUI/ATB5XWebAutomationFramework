@@ -6,7 +6,7 @@ import java.util.Properties;
 public class PropertyReader {
 
 
-    public static String readyKey(String key) {
+    public static String readyKey(String key) {  //1st Framework
         FileInputStream fileInputStream = null;
         Properties p = null;
         try{

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
-public class DriverManager {
+public class DriverManager {  //1st Framework
 
 public static WebDriver driver;
 

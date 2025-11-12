@@ -10,7 +10,7 @@ import java.time.Duration;
 import static Driver.DriverManagerTL.getDriver;
 
 
-public class CommonToAllPages {
+public class CommonToAllPages {   //1st Framework
 
     public CommonToAllPages() {
         // If you want to call something before every Page Object Class call, Put your Code here";

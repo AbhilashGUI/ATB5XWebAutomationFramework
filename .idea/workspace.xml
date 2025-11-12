@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bab78e2-8c2c-4ff9-ab51-3320416299a1" name="Changes" comment="New code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Base/UsedForAllPages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverManagerTL3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Page/POM/DashboardPage_POM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Page/POM/LoginPage_POM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/PropertyReader2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest/UserForAllTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test/Loginscheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Base/Basepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/Basepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/CommonToAllPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/DashboardPage_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/DashboardPage_POM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/LoginPage_POM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/PageObjectModel/LoginPage_POM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/PropertyReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest/CommonToAllTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest/CommonToAllTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestVWOLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/TestVWOLoginPOMBaseTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,36 +41,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AppTest.shouldAnswerWithTrue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AutomationCalenderTest.TestAutomationscenario.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestVWOLogin.Testloginnegative.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestVWOLoginPOM.TestloginNegative.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestVWOLoginPOM.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestVWOLoginPOMBaseTest.TestLoginNegative.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.TestVWOLogin.Testloginnegative.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestVWOLoginPOM.TestloginNegative.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestVWOLoginPOMBaseTest.TestLoginNegative.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.App.executor": "Run",
+    "JUnit.AppTest.shouldAnswerWithTrue.executor": "Run",
+    "JUnit.AutomationCalenderTest.TestAutomationscenario.executor": "Run",
+    "JUnit.TestVWOLogin.Testloginnegative.executor": "Run",
+    "JUnit.TestVWOLoginPOM.TestloginNegative.executor": "Run",
+    "JUnit.TestVWOLoginPOM.executor": "Run",
+    "JUnit.TestVWOLoginPOMBaseTest.TestLoginNegative.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_Negative.xml.executor": "Run",
+    "TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_NegativePOM.xml.executor": "Run",
+    "TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_priority.xml.executor": "Run",
+    "TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_smoke.xml.executor": "Run",
+    "TestNG.Loginscheck.TestLoginNegative.executor": "Run",
+    "TestNG.TestLoginPage.executor": "Run",
+    "TestNG.TestLoginPage.testValidLoginAndDashboardUser.executor": "Run",
+    "TestNG.TestVWOLogin.Testloginnegative.executor": "Run",
+    "TestNG.TestVWOLogin.executor": "Run",
+    "TestNG.TestVWOLoginPOM.TestloginNegative.executor": "Run",
+    "TestNG.TestVWOLoginPOMBaseTest.TestLoginNegative.executor": "Run",
+    "TestNG.TestVWOLoginPOMBaseTest.executor": "Run",
+    "TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Abhilash Sharma\IdeaProjects\ATB5XWebAutomationFramework\src\test\java\TestXMLs" />
       <recent name="C:\Users\Abhilash Sharma\IdeaProjects\ATB5XWebAutomationFramework\src\test\java\TestXMLPOM" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestVWOLogin.Testloginnegative">
-    <configuration name="TestVWOLoginPOMBaseTest.TestLoginNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_priority.xml">
+    <configuration name="C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_priority.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB5XWebAutomationFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestXMLs/testng_priority.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_smoke.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATB5XWebAutomationFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestXMLs/testng_smoke.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestVWOLoginPOMBaseTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATB5XWebAutomationFramework" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +109,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOMBaseTest" />
-      <option name="METHOD_NAME" value="TestLoginNegative" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,49 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestVWOLoginPOM.TestloginNegative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATB5XWebAutomationFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLoginPOM" />
-      <option name="METHOD_NAME" value="TestloginNegative" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestVWOLogin.Testloginnegative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ATB5XWebAutomationFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestVWOLogin" />
-      <option name="METHOD_NAME" value="Testloginnegative" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestVWOLogin.Testloginnegative" />
+        <item itemvalue="TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_priority.xml" />
         <item itemvalue="TestNG.TestVWOLoginPOMBaseTest2.Testloginpositive" />
+        <item itemvalue="TestNG.C:/Users/Abhilash Sharma/IdeaProjects/ATB5XWebAutomationFramework/src/test/java/TestXMLs/testng_smoke.xml" />
         <item itemvalue="TestNG.TestVWOLoginPOMBaseTest.TestLoginNegative" />
-        <item itemvalue="TestNG.TestVWOLoginPOM.TestloginNegative" />
-        <item itemvalue="JUnit.TestVWOLoginPOMBaseTest.TestLoginNegative" />
+        <item itemvalue="TestNG.TestVWOLoginPOMBaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762530099395</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="New code">
+      <option name="closed" value="true" />
+      <created>1762693905880</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762693905880</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
