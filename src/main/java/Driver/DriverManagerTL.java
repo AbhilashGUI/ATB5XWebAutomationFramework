@@ -5,7 +5,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.Objects;
 
-public class DriverManagerTL {
+public class DriverManagerTL {   //1st Framework
 
     public static final ThreadLocal<WebDriver> dr= new ThreadLocal<>();
 
