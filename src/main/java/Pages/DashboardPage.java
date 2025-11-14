@@ -1,9 +1,11 @@
 package Pages;
 
-import Base.Basepage;
+
+import Base.UsedForAllPages;
 import org.openqa.selenium.By;
 
-public class DashboardPage extends Basepage {
+//3rd Framework
+public class DashboardPage extends UsedForAllPages {
 
     DashboardPage() {
 
@@ -19,7 +21,7 @@ public class DashboardPage extends Basepage {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        //presenceOfElement(UserNameOnDashboard);
+        presenceOfElement(UserNameOnDashboard);
         return getElement(UserNameOnDashboard).getText();
     }
 

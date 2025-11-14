@@ -1,11 +1,13 @@
 package Page.POM;
 
-import Base.UsedForAllPages;
-import Driver.DriverManagerTL3;
+import Base.Basepage;
+import Driver.DriverManagerTL2;
 import Utils.PropertyReader2;
 import org.openqa.selenium.By;
 
-public class LoginPage_POM extends UsedForAllPages {
+
+//Cucumber BDD Framework
+public class LoginPage_POM extends Basepage {
 
     public LoginPage_POM()
     {
@@ -18,7 +20,7 @@ public class LoginPage_POM extends UsedForAllPages {
     By username= By.id("login-username");
     By password= By.id("login-password");
     By signbutton= By.id("js-login-btn");
-    By error_popup=By.id("js-notification-box-msg");
+    By error_message=By.id("js-notification-box-msg");
 
 
     //Pageactions
@@ -33,7 +35,7 @@ public class LoginPage_POM extends UsedForAllPages {
 
        public void openUrl(String url)
        {
-           DriverManagerTL3.getDriver().get(url);
+           DriverManagerTL2.getDriver().get(url);
        }
 
        public String LoginToVWONegative() throws Exception {
@@ -41,8 +43,8 @@ public class LoginPage_POM extends UsedForAllPages {
            enterInput(password,PropertyReader2.readykey("password"));
            clickElement(signbutton);
            // error String
-           visibilityOfElement(error_popup);
-           return getElement(error_popup).getText();
+           visibilityOfElement(error_message);
+           return getElement(error_message).getText();
 
        }
 

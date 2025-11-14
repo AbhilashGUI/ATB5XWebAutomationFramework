@@ -8,9 +8,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Properties;
 
-public class PropertyReader1 {
+public class PropertyReader3 {
 
-    PropertyReader1()
+    PropertyReader3()
     {
 
     }
@@ -22,7 +22,7 @@ public class PropertyReader1 {
     static
     {
         try {
-            fileInputStream = new FileInputStream(new File(System.getProperty("user.dir")) + "/src/test/resources/config.properties");
+            fileInputStream = new FileInputStream(new File(System.getProperty("user.dir")) + "/src/main/java/Resources/Config1.properties");
             p = new Properties();
             p.load(fileInputStream);
             for (Object key : p.keySet()) {
@@ -45,14 +45,12 @@ public class PropertyReader1 {
 
 
     public static String readKey(String key) throws Exception {
-        if (key == null && p.getProperty(key) == null) {
+        if (key == null || p.getProperty(key) == null) {
             throw new Exception(p.getProperty(key) + "not found!!");
         } else {
             return PROP_KEYS.get(key);
         }
     }
-
-
 
 
 }

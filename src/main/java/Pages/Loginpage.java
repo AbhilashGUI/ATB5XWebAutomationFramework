@@ -1,11 +1,13 @@
 package Pages;
 
-import Base.Basepage;
-import Driver.DriverManagerTL2;
-import Utils.PropertyReader;
+
+import Base.UsedForAllPages;
+import Driver.DriverManagerTL3;
+import Utils.PropertyReader3;
 import org.openqa.selenium.By;
 
-public class Loginpage extends Basepage {
+//3rd Framework
+public class Loginpage extends UsedForAllPages {
 
     public Loginpage()
     {
@@ -26,13 +28,13 @@ public class Loginpage extends Basepage {
     {
         if (!invalid)
         {
-            enterInput(username, PropertyReader.readyKey("invalid_username"));
+            enterInput(username, PropertyReader3.readKey("invalid_username"));
 
         }else {
-            enterInput(password, PropertyReader.readyKey("username"));
+            enterInput(password, PropertyReader3.readKey("username"));
         }
 
-        enterInput(password,PropertyReader.readyKey("password"));
+        enterInput(password,PropertyReader3.readKey("password"));
         clickElement(signinbutton);
         return this;
     }
@@ -40,7 +42,7 @@ public class Loginpage extends Basepage {
     public String error_message_text() throws InterruptedException
     {
         visibilityOfElementLocated(error_message);
-        return DriverManagerTL2.getDriver().findElement(error_message).getText();
+        return DriverManagerTL3.getDriver().findElement(error_message).getText();
     }
 
     public DashboardPage afterlogin()

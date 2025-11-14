@@ -1,9 +1,11 @@
 package Page.POM;
 
-import Base.UsedForAllPages;
+import Base.Basepage;
 import org.openqa.selenium.By;
 
-public class DashboardPage_POM extends UsedForAllPages {
+//Cucumber BDD Framework
+
+public class DashboardPage_POM extends Basepage {
 
     DashboardPage_POM() {
     }

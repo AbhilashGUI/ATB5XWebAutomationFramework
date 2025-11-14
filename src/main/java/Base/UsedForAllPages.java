@@ -6,51 +6,48 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class UsedForAllPages {
 
-    public void UsedForAllPages()
+ // 3rd framework
+    protected UsedForAllPages()
     {
 
     }
-    //This is common to all Pages
 
-
-    //Driver call
-
-    public void clickElement(By by)
+    protected void implicitwait()
     {
-        DriverManagerTL3.getDriver().findElement(by).click();
+        DriverManagerTL3.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    public WebElement presenceOfElement(final By elementLocation)
-    {
-        return new WebDriverWait(DriverManagerTL3.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));
-    }
-
-    public WebElement visibilityOfElement(final By elementLocation)
-    {
-        return new WebDriverWait(DriverManagerTL3.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
-    }
 
     protected void enterInput(By by, String key) {
         DriverManagerTL3.getDriver().findElement(by).sendKeys(key);
     }
 
-    protected WebElement getElement(By key) {
+
+    protected void clickElement(By by)
+    {
+        DriverManagerTL3.getDriver().findElement(by).click();
+    }
+    protected WebElement getElement(By key)
+    {
         return DriverManagerTL3.getDriver().findElement(key);
     }
-
-    public void iWaitForElementToBeVisible(WebElement loc,String url) {
-        try {
-            WebDriverWait wait = new WebDriverWait(DriverManagerTL3.getDriver(), Duration.ofSeconds(20));
-            wait.until(ExpectedConditions.visibilityOfAllElements(loc));
-            wait.until(ExpectedConditions.urlContains(url));
-        } catch (Exception e) {
-            System.out.println("Failed to Wait!: " + e.toString());
-        }
+    protected WebElement presenceOfElement(final By elementLocation)
+    {
+        return new WebDriverWait(DriverManagerTL3.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.presenceOfElementLocated(elementLocation));
     }
 
+    protected WebElement visibilityOfElementLocated(final By elementLocation)
+    {
+        return new WebDriverWait(DriverManagerTL3.getDriver(), Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(elementLocation));
+    }
+
+    protected WebElement elementtobeClickable(final By elementIdentifier)
+    {
+    WebElement element=new WebDriverWait(DriverManagerTL3.getDriver(),Duration.ofSeconds(20)).until(ExpectedConditions.elementToBeClickable(elementIdentifier));
+    return element;
+    }
 
 }

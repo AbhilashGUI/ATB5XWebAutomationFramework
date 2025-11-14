@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.Properties;
 
+
+//Cucumber BDD Framework
 public class PropertyReader2 {
 
     PropertyReader2()
@@ -18,7 +20,7 @@ public class PropertyReader2 {
             Properties p=null;
 
         try {
-            fileInputStream= new FileInputStream(new File(System.getProperty("users.dir")+"src/main/java/Resources/Data.properties"));
+            fileInputStream= new FileInputStream(new File(System.getProperty("user.dir")+"/src/main/java/Resources/Data.properties"));
             p=new Properties();
             p.load(fileInputStream);
         } catch (IOException ex) {

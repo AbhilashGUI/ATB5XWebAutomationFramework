@@ -4,15 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 
-import java.net.MalformedURLException;
 import java.util.Objects;
 
+//3rd Framework
 public class DriverManagerTL3 {
 
-    public static final ThreadLocal<WebDriver> dr = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> dr = new ThreadLocal<>();
 
-    public static void setDriver(WebDriver driverRef) {
-        dr.set(driverRef);
+    public static void setDriver(WebDriver driverref) {
+        dr.set(driverref);
     }
 
     public static WebDriver getDriver() {
@@ -24,21 +24,24 @@ public class DriverManagerTL3 {
         dr.remove();
     }
 
+
     public static void down() {
-        if (Objects.nonNull(DriverManagerTL2.getDriver())) {
+        if (Objects.nonNull(DriverManagerTL3.getDriver())) {
             getDriver().quit();
             unload();
         }
     }
-
-    public static void init() throws MalformedURLException {
-        if (Objects.isNull(DriverManagerTL2.getDriver())) {
-            EdgeOptions options = new EdgeOptions();
-            options.addArguments("--guest");
-            options.addArguments("--remote-allow-origins=*");
-            WebDriver driver = new EdgeDriver(options);
-            setDriver(driver);
+        public static void init()
+        {
+            if(Objects.isNull(DriverManagerTL3.getDriver()))
+            {
+                EdgeOptions options= new EdgeOptions();
+                options.addArguments("--guests");
+                options.addArguments("--remote-allow-origins=*");
+                WebDriver driver= new EdgeDriver(options);
+                setDriver(driver);
+            }
         }
 
     }
-}
+

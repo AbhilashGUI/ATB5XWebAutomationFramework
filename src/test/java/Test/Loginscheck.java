@@ -1,23 +1,25 @@
 package Test;
 
-import BaseTest.UserForAllTest;
+import BaseTest.TestBase;
 import Page.POM.DashboardPage_POM;
 import Page.POM.LoginPage_POM;
 import Utils.PropertyReader2;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
-public class Loginscheck extends UserForAllTest {
+
+//Cucumber BDD Framework
+public class Loginscheck extends TestBase {
 
     @Test(priority = 1)
     public void TestLoginNegative() throws Exception {
         LoginPage_POM pagePom= new LoginPage_POM();
         pagePom.openUrl(PropertyReader2.readykey("url"));
-        String error_popup=pagePom.LoginToVWONegative();
-        Assertions.assertThat(error_popup)
+        String error_message=pagePom.LoginToVWONegative();
+        Assertions.assertThat(error_message)
                 .isNotNull()
                 .isNotBlank()
-                .contains(PropertyReader2.readykey(error_popup));
+                .contains(PropertyReader2.readykey("error_message"));
 
     }
 
